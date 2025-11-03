@@ -1,0 +1,97 @@
+/* styles.css */
+:root{
+  --bg1: #f6fbff;
+  --bg2: #e8f4ff;
+  --accent: #6aa6ff;
+  --muted: #6b7280;
+  --card-bg: #ffffff;
+  --radius: 14px;
+  --max-width: 1100px;
+  --page-padding: 24px;
+}
+
+/* *{box-sizing:border-box;margin:0;padding:0} */
+
+html,body{height:100%}
+body{
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg1), var(--bg2));
+  color:#0f172a;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  /* margin: 0; */
+  /* padding:40px 12px; */
+}
+
+/* আগের monobondhu ডিজাইনের মতো হেডার */
+.form-header {
+    background-color: #00a884;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.site-header{
+  width:100%;
+  max-width:var(--max-width);
+  display:flex;
+  justify-content:center;
+  padding:18px var(--page-padding);
+}
+
+.site-title a{
+    text-decoration: none;
+  font-size: clamp(28px, 6vw, 44px);
+  background: linear-gradient(90deg, #0f172a, var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight:700;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 25px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+
+li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #00a884;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #008a70;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
